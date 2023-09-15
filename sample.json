@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "id" : "8d3c59f8-371b-4753-8333-db714922203f",
+            "name": "iPhone 15",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tempus iaculis urna id volutpat. Varius sit amet mattis vulputate enim nulla aliquet. Donec massa sapien faucibus et. Posuere lorem ipsum dolor sit. Eu non diam phasellus vestibulum lorem sed risus ultricies.",
+            "sku": "IP-BLUE-2023M",
+            "price": 35499.00,
+            "image": "https://cdn.thewirecutter.com/wp-content/media/2022/10/whichiphone-2048px-2681-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024&dpr=2"
+        },
+        {
+            "id" : "d7709304-c62c-4df5-ad6d-c1b9a9d75c6b",
+            "name": "Samsung Galaxy S23",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tempus iaculis urna id volutpat. Varius sit amet mattis vulputate enim nulla aliquet. Donec massa sapien faucibus et. Posuere lorem ipsum dolor sit. Eu non diam phasellus vestibulum lorem sed risus ultricies.",
+            "sku": "SS-GOLD-2023M",
+            "price": 31000.00,
+            "image": "https://media.cnn.com/api/v1/images/stellar/prod/230308120048-underscored-galaxy-s23-ultra-camera-lead.jpg?c=16x9&q=h_720,w_1280,c_fill/f_webp"
+        }
+    ]
+}
