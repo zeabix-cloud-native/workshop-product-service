@@ -26,6 +26,15 @@ spec:
             value: "8080"
           - name: DELAY
             value: "2s"
+        volumeMounts:
+          - name: init-products-vol
+            mountPath: /app/sample.json
+            subPath: sample.json
+      volumes:
+        - name: init-products-vol
+          configMap:
+            name: init-products
+
 ---
 apiVersion: v1
 kind: Service

@@ -10,6 +10,5 @@ FROM golang:alpine
 WORKDIR /app
 
 COPY --from=0 /build/workshop-product-service .
-COPY --from=0 /build/sample.json .
 
 CMD ["/app/workshop-product-service"]
