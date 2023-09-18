@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workshop-product-service
+  labels:
+    app: workshop-product-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workshop-product-service
+  template:
+    metadata:
+      labels:
+        app: workshop-product-service
+    spec:
+      containers:
+      - name: workshop-profile-service
+        image: lqbl0acr0shared.azurecr.io/workshop-product-service:cacb540
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+          - name: PORT 
+            value: "8080"
+          - name: DELAY
+            value: "2s"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: workshop-product-service
+spec:
+  selector:
+    app: workshop-product-service
+  ports:
+  - name: rest-api
+    protocol: TCP
+    port: 8080
+    targetPort: 8080

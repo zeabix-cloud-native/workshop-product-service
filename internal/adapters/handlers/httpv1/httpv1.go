@@ -32,7 +32,8 @@ func NewHandler(srv ports.ProductService) *Handler {
 
 func (h *Handler) Serve(port string) error {
 	h.app.Use(cors.New())
-	v1 := h.app.Group("v1")
+	g := h.app.Group("product-service")
+	v1 := g.Group("v1")
 	v1.Get("/products", h.listProductHandler)
 	v1.Get("/products/:id", h.getProductHandler)
 
